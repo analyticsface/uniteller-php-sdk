@@ -9,7 +9,8 @@ require __DIR__ . '/credentials.php';
 
 $builder = new PaymentBuilder();
 $builder
-    ->useRecurrentPayment()
+    ->setCurrency('KGS')
+    ->setLanguage('ru')
     ->setOrderIdp(mt_rand(10000, 99999))
     ->setSubtotalP(10)
     ->setCustomerIdp(mt_rand(10000, 99999))
